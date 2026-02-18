@@ -1,4 +1,4 @@
-import { capitalize } from './function.js';
+import { capitalize, reverse  } from './function.js';
 
 describe('capitalize', () => {
   test('capitalizes first letter of lowercase word', () => {
@@ -11,5 +11,13 @@ describe('capitalize', () => {
 
   test('works with single letter', () => {
     expect(capitalize('a')).toBe('A');
+  });
+});
+
+
+
+describe('reverse', () => {
+  test('reverses a string', () => {
+    expect(reverse('hello')).toBe('olleh');
   });
 });
